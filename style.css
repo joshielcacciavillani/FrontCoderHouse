@@ -18,7 +18,7 @@ section {
   width: 100%;
 }
 
-body{
+body {
   display: grid;
   grid-template-columns: 2fr;
   grid-template-rows: 1fr 4fr 1fr;
@@ -52,7 +52,7 @@ nav {
 
 .nav-links li:hover {
   color: rgb(92, 91, 91);
-  transform: rotate(6deg) ;
+  transform: rotate(6deg);
 }
 
 .nav-links li {
@@ -62,28 +62,28 @@ nav {
   transition: all 0.3s ease-out;
 }
 
-
-
 /* START - HEADER */
 
-header{
+header {
   width: 100vw;
   height: 100vh;
-  background-image: url('./img/TOP.png');
+  background-image: url("./img/heroligh.jpg");
   background-position: top;
   background-size: cover;
   display: flex;
   justify-content: space-between;
   align-items: center;
   grid-column: 1/3;
+  filter: saturate(50%);
 }
 
 .header-content {
-  margin-bottom:  150px;
+  margin-bottom: 150px;
   text-align: center;
+  text-shadow: rgb(19, 18, 18);
 }
 
-.header-content h2{
+.header-content h3 {
   font-size: 4vmin;
   text-decoration-color: black;
 }
@@ -91,12 +91,12 @@ header{
 .line {
   width: 150px;
   height: 4px;
-  background-color:black;
-    margin: 10px auto;
+  background-color: black;
+  margin: 10px auto;
   border-radius: 5px;
 }
 
-.header-content h1{
+.header-content h2 {
   font-size: 12vmin;
   margin-top: 15px;
   margin-bottom: 15px;
@@ -104,13 +104,12 @@ header{
   text-shadow: rgb(19, 18, 18);
 }
 
-.header-content p{
+.header-content p {
   font-size: 5vmin;
   margin-top: 15px;
   margin-bottom: 15px;
   text-decoration-color: black;
   text-shadow: rgb(19, 18, 18);
-
 }
 
 /* START - EVENTOS */
@@ -139,7 +138,7 @@ header{
   margin-top: 50px;
 }
 
-h4{
+h4 {
   font-size: 3vmin;
   color: black;
   margin: 20px auto;
@@ -150,7 +149,7 @@ p {
   padding: 0px 40px;
 }
 
-.muestras .contenido{
+.muestras .contenido {
   margin-top: 30px;
 }
 
@@ -162,7 +161,7 @@ p {
   color: black;
 }
 
-h4{
+h4 {
   font-size: 3vmin;
   color: black;
   margin: 20px auto;
@@ -173,7 +172,7 @@ p {
   padding: 0px 40px;
 }
 
-.tienda .contenido{
+.tienda {
   margin-top: 30px;
 }
 
@@ -187,9 +186,8 @@ p {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto auto;
   grid-template-areas:
-      "imagenUno imagenDos imagenTres"
-      "imagenCuatro imagenCinco imagenSeis"
-  ;
+    "imagenUno imagenDos imagenTres"
+    "imagenCuatro imagenCinco imagenSeis";
 }
 
 .imagenUno {
@@ -218,34 +216,37 @@ p {
 
 /* START - CONTACTO FORMULARIO */
 
-form{
+form {
   padding: 60px;
   max-width: 400px;
-  background-color: #E7E7E7;
+  background-color: #e7e7e7;
   margin: 0 auto;
 }
 
-form input, form textarea{
+form input,
+form textarea {
   margin-bottom: 15px;
   width: 100%;
   padding: 10px;
-  box-sizing: border-box; 
-  border: none; 
-  color: #525c66; 
+  box-sizing: border-box;
+  border: none;
+  color: #525c66;
   font-size: 1em;
-  resize: none; 
+  resize: none;
 }
 
 form button {
-	display: block;
-	background-color: #0095eb;
-	padding: 10px 45px 10px 45px;
-	border: 0;
-	font-size: 1em; 
-	color: 	white;
+  display: block;
+  background-color: #0095eb;
+  padding: 10px 45px 10px 45px;
+  border: 0;
+  font-size: 1em;
+  color: white;
 }
 
-textarea {  resize: none;}
+textarea {
+  resize: none;
+}
 
 /* START - FOOTER */
 
@@ -253,63 +254,57 @@ footer {
   background-color: goldenrod;
   grid-column: 1/3;
 }
-footer ul{
+footer ul {
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
 
-footer a{
+footer a {
   font-size: 50px;
   color: black;
 }
 
 /*VISTA MOVIL */
 
-@media only screen and (max-width:250px) {
-  body{
+@media only screen and (max-width: 250px) {
+  body {
     grid-template-columns: 1fr;
   }
-  aside{
-    display: block;
-  }
-  
-      .gridPadre {
-          display: grid;
-          grid-template-columns: 1fr;
-          grid-template-rows: auto auto auto auto auto auto;
-          grid-template-areas:
-              "imagenUno"
-              "imagenDos"
-              "imagenTres"
-              "imagenCuatro"
-              "imagenCinco"
-              "imagenSeis"
-          ;
-  
-      }
-  
-  }
-
-  /* VISTA TABLET */
-@media only screen and (min-width: 780px) {
-  body{
-    grid-template-columns: 1fr;
-  }
-  aside{
+  aside {
     display: block;
   }
 
   .gridPadre {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: auto auto auto;
-      grid-template-areas:
-          "imagenUno imagenDos"
-          "imagenTres imagenCuatro"
-          "imagenCinco imagenSeis"
-      ;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-areas:
+      "imagenUno"
+      "imagenDos"
+      "imagenTres"
+      "imagenCuatro"
+      "imagenCinco"
+      "imagenSeis";
+  }
+}
+
+/* VISTA TABLET */
+@media only screen and (min-width: 780px) {
+  body {
+    grid-template-columns: 1fr;
+  }
+  aside {
+    display: block;
   }
 
-
+  .gridPadre {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+      "imagenUno imagenDos"
+      "imagenTres imagenCuatro"
+      "imagenCinco imagenSeis";
+  }
 }
