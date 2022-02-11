@@ -1,0 +1,42 @@
+/* VISTA MOBILE */
+@media only screen and (max-width: 250px) {
+  body {
+    grid-template-columns: 1fr;
+  }
+  aside {
+    display: block;
+  }
+
+  .gridPadre {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-areas:
+      "imagenUno"
+      "imagenDos"
+      "imagenTres"
+      "imagenCuatro"
+      "imagenCinco"
+      "imagenSeis";
+  }
+}
+
+/* VISTA TABLET */
+@media only screen and (min-width: 780px) {
+  body {
+    grid-template-columns: 1fr;
+  }
+  aside {
+    display: block;
+  }
+
+  .gridPadre {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+      "imagenUno imagenDos"
+      "imagenTres imagenCuatro"
+      "imagenCinco imagenSeis";
+  }
+}

@@ -1,0 +1,47 @@
+header {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("./img/heroligh.jpg");
+  background-position: top;
+  background-size: cover;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  grid-column: 1/3;
+  filter: saturate(50%);
+}
+
+.header-content {
+  margin-bottom: 150px;
+  text-align: center;
+  text-shadow: rgb(19, 18, 18);
+}
+
+.header-content h3 {
+  font-size: 4vmin;
+  text-decoration-color: black;
+}
+
+.line {
+  width: 150px;
+  height: 4px;
+  background-color: black;
+  margin: 10px auto;
+  border-radius: 5px;
+}
+
+.header-content h2 {
+  font-size: 12vmin;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  text-decoration-color: black;
+  text-shadow: rgb(19, 18, 18);
+}
+
+.header-content p {
+  font-size: 5vmin;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  text-decoration-color: black;
+  text-shadow: rgb(19, 18, 18);
+}
