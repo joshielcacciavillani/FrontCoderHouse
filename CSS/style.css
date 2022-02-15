@@ -49,7 +49,7 @@ nav {
 header {
   width: 100vw;
   height: 100vh;
-  background-image: url("./img/heroligh.jpg");
+  background-image: url("../img/heroligh.jpg");
   background-position: top;
   background-size: cover;
   display: -webkit-box;
@@ -106,131 +106,21 @@ header {
   text-shadow: #131212;
 }
 
-.title {
+.eventos {
   text-align: center;
-  font-size: 4vmin;
-  color: black;
 }
 
-.row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100%;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.row .col {
-  width: 80%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.muestras .row {
+.eventos-content h2 {
+  font-size: 12vmin;
   margin-top: 50px;
 }
 
-h4 {
-  font-size: 3vmin;
-  color: black;
-  margin: 20px auto;
+.eventos-content p {
+  font-size: 10vmin;
+  margin-top: 15px;
 }
 
-p {
-  color: black;
-  padding: 0px 40px;
-}
-
-.muestras .contenido {
-  margin-top: 30px;
-}
-
-.title {
-  text-align: center;
-  font-size: 4vmin;
-  color: black;
-}
-
-h4 {
-  font-size: 3vmin;
-  color: black;
-  margin: 20px auto;
-}
-
-p {
-  color: black;
-  padding: 0px 40px;
-}
-
-.tienda {
-  margin-top: 30px;
-}
-
-.imagenTienda:hover {
-  -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
-  z-index: 5;
-}
-
-.gridPadre {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
-  -ms-grid-rows: auto auto;
-      grid-template-rows: auto auto;
-      grid-template-areas: "imagenUno imagenDos imagenTres" "imagenCuatro imagenCinco imagenSeis";
-}
-
-.imagenUno {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: imagenUno;
-}
-
-.imagenDos {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
-  grid-area: imagenDos;
-}
-
-.imagenTres {
-  -ms-grid-row: 1;
-  -ms-grid-column: 3;
-  grid-area: imagenTres;
-}
-
-.imagenCuatro {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: imagenCuatro;
-}
-
-.imagenCinco {
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
-  grid-area: imagenCinco;
-}
-
-.imagenSeis {
-  -ms-grid-row: 2;
-  -ms-grid-column: 3;
-  grid-area: imagenSeis;
-}
-
+/* START - CONTACTO FORMULARIO */
 form {
   padding: 60px;
   max-width: 400px;
@@ -265,7 +155,7 @@ textarea {
 }
 
 /* VISTA MOBILE */
-@media only screen and (max-width: 250px) {
+@media only screen and (max-width: 320px) {
   body {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
@@ -274,18 +164,15 @@ textarea {
     display: block;
   }
   .gridPadre {
-    display: -ms-grid;
-    display: grid;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     -ms-grid-rows: auto auto auto auto auto auto;
         grid-template-rows: auto auto auto auto auto auto;
-        grid-template-areas: "imagenUno" "imagenDos" "imagenTres" "imagenCuatro" "imagenCinco" "imagenSeis";
   }
 }
 
 /* VISTA TABLET */
-@media only screen and (min-width: 780px) {
+@media only screen and (min-width: 500px) {
   body {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
@@ -294,13 +181,47 @@ textarea {
     display: block;
   }
   .gridPadre {
-    display: -ms-grid;
-    display: grid;
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
     -ms-grid-rows: auto auto auto;
         grid-template-rows: auto auto auto;
-        grid-template-areas: "imagenUno imagenDos" "imagenTres imagenCuatro" "imagenCinco imagenSeis";
   }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Oswald", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  list-style: none;
+}
+
+section {
+  width: 100%;
+}
+
+body {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr;
+      grid-template-columns: 2fr;
+  -ms-grid-rows: 1fr 4fr 1fr;
+      grid-template-rows: 1fr 4fr 1fr;
+  height: 100vh;
+}
+
+section {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.349);
 }
 /*# sourceMappingURL=style.css.map */

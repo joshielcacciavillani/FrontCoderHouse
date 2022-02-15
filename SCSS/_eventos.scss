@@ -1,38 +1,13 @@
-.title {
+.eventos {
   text-align: center;
-  font-size: 4vmin;
-  color: black;
 }
 
-.row {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  justify-content: space-between;
-}
-
-.row .col {
-  width: 80%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.muestras .row {
+.eventos-content h2 {
+  font-size: 12vmin;
   margin-top: 50px;
 }
 
-h4 {
-  font-size: 3vmin;
-  color: black;
-  margin: 20px auto;
-}
-
-p {
-  color: black;
-  padding: 0px 40px;
-}
-
-.muestras .contenido {
-  margin-top: 30px;
+.eventos-content p {
+  font-size: 10vmin;
+  margin-top: 15px;
 }
