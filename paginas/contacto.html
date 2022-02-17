@@ -42,25 +42,23 @@
     </nav>
 
     <!-- form -->
-    <form action="formulario-contacto.php" method="post">
-      <input
-        name="nombre"
-        type="text"
-        placeholder="Nombre"
-        maxlength="30"
-        pattern="[a-zA-Z0-9]+"
-        required
-        autofocus
-      />
-      <input name="email" type="email" placeholder="Correo electrónico" required />
-      <textarea
-        name="consulta"
-        placeholder="¿Cuál es el motivo de tu consulta?"
-        rows="6"
-        required
-      ></textarea>
-      <button id="enviar" name="enviar" type="submit" class="btn">ENVIAR</button>
-    </form>
+    <section class="form">
+      <div class="container">
+        <div class="mb-3">
+          <label for="nombre" class="form-label">Nombre</label>
+          <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Juan Fulanito">
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">Correo Electronico</label>
+          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label">Comentarios</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+         <button type="submit" class="btn btn-warning" >Submit</button>
+      </div>
+    </section>
 
     <!-- footer -->
     <footer>

@@ -21,16 +21,14 @@ nav {
   align-items: center;
   color: black;
   font-size: 20px;
-}
-
-.nav-links li:hover {
-  color: rgb(92, 91, 91);
-  transform: rotate(6deg);
-}
-
-.nav-links li {
-  margin: 0 10px;
-  text-decoration: none;
-  display: block;
-  transition: all 0.3s ease-out;
+  li:hover {
+    color: rgb(92, 91, 91);
+    transform: rotate(6deg);
+  }
+  li {
+    margin: 0 10px;
+    text-decoration: none;
+    display: block;
+    transition: all 0.3s ease-out;
+  }
 }

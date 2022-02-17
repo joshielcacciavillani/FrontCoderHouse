@@ -47,6 +47,7 @@ nav {
 }
 
 header {
+  margin-top: 60px;
   width: 100vw;
   height: 100vh;
   background-image: url("../img/heroligh.jpg");
@@ -69,6 +70,7 @@ header {
 }
 
 .header-content {
+  margin-top: 60px;
   margin-bottom: 150px;
   text-align: center;
   text-shadow: #131212;
@@ -78,14 +80,9 @@ header {
   font-size: 4vmin;
   -webkit-text-decoration-color: black;
           text-decoration-color: black;
-}
-
-.line {
-  width: 150px;
-  height: 4px;
-  background-color: black;
-  margin: 10px auto;
-  border-radius: 5px;
+  border-bottom: 4px solid black;
+  display: inline-block;
+  padding-bottom: 15px;
 }
 
 .header-content h2 {
@@ -110,6 +107,10 @@ header {
   text-align: center;
 }
 
+.eventos-content {
+  margin-left: 30px;
+}
+
 .eventos-content h2 {
   font-size: 12vmin;
   margin-top: 50px;
@@ -118,6 +119,10 @@ header {
 .eventos-content p {
   font-size: 10vmin;
   margin-top: 15px;
+}
+
+.container {
+  margin-top: 80px;
 }
 
 /* START - CONTACTO FORMULARIO */
@@ -205,6 +210,12 @@ textarea {
   }
 }
 
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -233,8 +244,13 @@ body {
 }
 
 section {
+  margin-top: 70px;
   width: 100%;
-  height: 850px;
-  background-color: rgba(0, 0, 0, 0.349);
+  height: 100vh;
+  background-color: #c0a979;
+}
+
+card-img-top {
+  width: 100px;
 }
 /*# sourceMappingURL=style.css.map */
