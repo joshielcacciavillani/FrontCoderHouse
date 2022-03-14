@@ -47,7 +47,6 @@ nav {
 }
 
 header {
-  margin-top: 60px;
   width: 100vw;
   height: 100vh;
   background-image: url("../img/heroligh.jpg");
@@ -56,9 +55,6 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -78,6 +74,8 @@ header {
 
 .header-content h3 {
   font-size: 4vmin;
+  margin-top: 15px;
+  margin-bottom: 15px;
   -webkit-text-decoration-color: black;
           text-decoration-color: black;
   border-bottom: 4px solid black;
@@ -91,7 +89,6 @@ header {
   margin-bottom: 15px;
   -webkit-text-decoration-color: black;
           text-decoration-color: black;
-  text-shadow: #131212;
 }
 
 .header-content p {
@@ -100,29 +97,14 @@ header {
   margin-bottom: 15px;
   -webkit-text-decoration-color: black;
           text-decoration-color: black;
-  text-shadow: #131212;
 }
 
 .eventos {
   text-align: center;
 }
 
-.eventos-content {
-  margin-left: 30px;
-}
-
-.eventos-content h2 {
-  font-size: 12vmin;
-  margin-top: 50px;
-}
-
-.eventos-content p {
-  font-size: 10vmin;
-  margin-top: 15px;
-}
-
 .container {
-  margin-top: 80px;
+  margin-top: 70px;
 }
 
 /* VISTA MOBILE */
@@ -183,10 +165,6 @@ footer {
 }
 
 * {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   font-family: "Oswald", sans-serif;
 }
 
@@ -199,24 +177,28 @@ ul {
   list-style: none;
 }
 
-body {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 2fr;
-      grid-template-columns: 2fr;
-  -ms-grid-rows: 1fr 4fr 1fr;
-      grid-template-rows: 1fr 4fr 1fr;
-  height: 100vh;
-}
-
 section {
-  margin-top: 70px;
+  margin-top: 64px;
   width: 100%;
   height: 100vh;
   background-color: #c0a979;
 }
 
-card-img-top {
-  width: 100px;
+.container-content {
+  margin-left: 30px;
+}
+
+.container-content h2 {
+  font-size: 6vmin;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-top: 50px;
+}
+
+.container-content p {
+  font-size: 4vmin;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-top: 15px;
 }
 /*# sourceMappingURL=style.css.map */

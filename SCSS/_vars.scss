@@ -1,5 +1,12 @@
+@mixin size($fs) {
+  font-size: $fs;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
 $panteraGold: goldenrod;
 
 $textdecorationblack: black;
 
-$textShadowBlack: rgb(19, 18, 18)
+$textShadowBlack: rgb(19, 18, 18);
+
